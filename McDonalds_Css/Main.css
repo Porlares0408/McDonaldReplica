@@ -1,0 +1,28 @@
+.container-main {
+  position: relative;
+  border: 1px solid black;
+  display: grid;
+  top: 80px;
+  left: 0;
+  right: 0;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  padding: 20px;
+  z-index: -1;
+}
+
+@media (min-width: 320px) {
+  .container-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.container-main div {
+  border: 1px solid black;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}

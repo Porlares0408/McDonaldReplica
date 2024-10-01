@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/y-icon" href="Thumbnails/image.png" />
+    <!-- Css style -->
+    <link rel="stylesheet" href="McDonalds_Css/ItemList.css" />
+    <link rel="stylesheet" href="McDonalds_Css/Main.css" />
+    <link rel="stylesheet" href="McDonalds_Css/Header.css" />
+    <link rel="stylesheet" href="McDonalds_Css/Reset.css" />
+    <link rel="stylesheet" href="McDonalds_Css/CategoryList.css" />
+    <!-- JS  -->
+    <link rel="stylesheet" href="McDonalds_JS/Image-Open-Close.js" />
+    <!-- Break Points -->
+    <link rel="stylesheet" href="McDonalds_Breakpoints/HeaderBreakpoint.css" />
+    <link rel="stylesheet" href="McDonalds_Breakpoints/MainBreakpoint.css" />
+    <link rel="stylesheet" href="McDonalds_Breakpoints/Category.css" />
+
+    <link
+      rel="stylesheet"
+      href="McDonalds_Breakpoints/ItemListBreakpoints.css" />
+
+    <title>App</title>
+  </head>
+  <body>
+    <header>
+      <div class="Name-logo">
+        <p>Porlares</p>
+      </div>
+      <div class="Title-logo">
+        <p class="Title-name">McDonalds Replica App</p>
+      </div>
+      <div class="Image-Open-Close">
+        <img
+          onclick="OpenCart()"
+          class="Open-cart-image"
+          src="Thumbnails/shopping_cart_checkout_25dp_EA3323_FILL0_wght400_GRAD0_opsz24.svg"
+          alt="" />
+        <img
+          onclick="CloseCart()"
+          class="Close-cart-image"
+          src="Thumbnails/close_25dp_EA3323_FILL0_wght400_GRAD0_opsz24.svg"
+          alt="" />
+      </div>
+      <!-- right Side Nav -->
+      <div class="Cart-list-add">
+        <div class="Holder-cart">
+          <div class="Cart-list-nav">
+            <img
+              src="Thumbnails/redeem_37dp_E8EAED_FILL0_wght400_GRAD0_opsz40.svg"
+              alt="" />
+          </div>
+          <div class="Cart-list-nav">
+            <img
+              src="Thumbnails/redeem_37dp_E8EAED_FILL0_wght400_GRAD0_opsz40.svg"
+              alt="" />
+          </div>
+          <div class="Cart-list-nav">
+            <img
+              src="Thumbnails/redeem_37dp_E8EAED_FILL0_wght400_GRAD0_opsz40.svg"
+              alt="" />
+          </div>
+          <div class="Cart-list-nav">
+            <img
+              src="Thumbnails/redeem_37dp_E8EAED_FILL0_wght400_GRAD0_opsz40.svg"
+              alt="" />
+          </div>
+        </div>
+        <div class="Total-Amount-Nav">
+          <input type="text " placeholder="Place Your Payment" />
+        </div>
+        <p
+          class="Total"
+          style="font-size: 20px; font-weight: bold; text-align: center">
+          Total Php:0.0
+        </p>
+        <p
+          class="Change"
+          style="font-size: 20px; font-weight: bold; text-align: center">
+          Your Change:0.0
+        </p>
+      </div>
+    </header>
+
+    <!-- Category -->
+    <div class="Category-list">
+      <a href="https://porlares0408.github.io/Porlares/">
+        <button>Portfolio</button></a
+      >
+      <button onclick="Selectin('Burger')" class="Burger">Burger</button>
+      <button onclick="Selectin('BreakFast')">BreakFast</button>
+      <button onclick="">Chicken</button>
+      <button onclick="">Fries</button>
+    </div>
+
+    <!-- items list -->
+    <div class="BreakFast-item">
+      <div class="item">
+        <img src="BreakFast/2pc. Hotcakes with Sausage.png" alt="" />
+        <div class="Title"><p>2pc. Hotcakes with Sausage</p></div>
+        <p class="Price">Php: 0</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="BreakFast/3pc. Hotcakes.png" alt="" />
+        <div class="Title"><p>3pc. Hotcakes</p></div>
+        <p class="Price">Php:00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="BreakFast/Cheesy Eggdesal.png" alt="" />
+        <div class="Title"><p>Cheesy Eggdesal</p></div>
+        <p class="Price">Php: 00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="BreakFast/Sausage Platter with Rice.png" alt="" />
+        <div class="Title"><p>Sausage Platter with Rice</p></div>
+        <p class="Price">Php: 00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="BreakFast/Egg McMuffin.png" alt="" />
+        <div class="Title"><p>Egg McMuffin</p></div>
+        <p class="Price">Php: 00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="BreakFast/Hash Browns.png" alt="" />
+        <div class="Title"><p>Hash Browns</p></div>
+        <p class="Price">Php: 00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="BreakFast/Sausage McMuffin with Egg.png" alt="" />
+        <div class="Title">
+          <p>Sausage McMuffin with Egg</p>
+        </div>
+        <p class="Price">Php: 00</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <script>
+      const Allcart = {};
+
+      function OpenCart() {
+        const openElement = document.querySelector(".Close-cart-image");
+        openElement.style.display = "block";
+        const closeElement = document.querySelector(".Open-cart-image");
+        closeElement.style.display = "none";
+        const openCartElement = document.querySelector(".Cart-list-add");
+        openCartElement.style.display = "block";
+      }
+      function CloseCart() {
+        const closeElement = document.querySelector(".Open-cart-image");
+        closeElement.style.display = "block";
+        const openElement = document.querySelector(".Close-cart-image");
+        openElement.style.display = "none";
+        const openCartElement = document.querySelector(".Cart-list-add");
+        openCartElement.style.display = "none";
+      }
+
+      // Category
+    </script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+@media (min-width: 320px) {
+  .Title-name {
+    display: none;
+  }
+  .Cart-list-add {
+    width: 100%;
+    height: 100vh;
+  }
+  .Cart-list-nav {
+    background-color: white;
+    width: 100px;
+    height: 80px;
+  }
+  .Holder-cart {
+    row-gap: 8px;
+  }
+}
+
+@media (min-width: 375px) {
+  .Title-name {
+    display: none;
+  }
+  .Cart-list-add {
+    width: 80%;
+    height: 100vh;
+  }
+  .Cart-list-nav {
+    background-color: white;
+    width: 170px;
+    height: 80px;
+  }
+  .Holder-cart {
+    row-gap: 3px;
+  }
+}
+@media (min-width: 425px) {
+  .Title-name {
+    display: none;
+  }
+  .Cart-list-add {
+    width: 70%;
+    height: 100vh;
+  }
+  .Cart-list-nav {
+    background-color: white;
+    width: 170px;
+    height: 85px;
+  }
+  .Holder-cart {
+    row-gap: 5px;
+  }
+}
+@media (min-width: 768px) {
+  .Title-name {
+    display: block;
+  }
+  .Cart-list-add {
+    width: 40%;
+    height: 100vh;
+  }
+  .Cart-list-nav {
+    background-color: white;
+    width: 170px;
+    height: 80px;
+  }
+  .Holder-cart {
+    row-gap: 8px;
+  }
+}
+@media (min-width: 1024px) {
+  .Cart-list-add {
+    width: 20%;
+    height: 100vh;
+  }
+  .Cart-list-nav {
+    background-color: white;
+    width: 150px;
+    height: 108px;
+  }
+  .Holder-cart {
+    row-gap: 7px;
+  }
+}

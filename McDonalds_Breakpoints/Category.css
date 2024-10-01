@@ -1,0 +1,12 @@
+@media (max-width: 320px) {
+  .Category-list {
+    overflow-y: auto;
+    padding-left: 129px;
+  }
+}
+@media (max-width: 375px) {
+  .Category-list {
+    overflow-y: auto;
+    padding-left: 80px;
+  }
+}
